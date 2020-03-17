@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <title>ES6 arrow function</title>
+        <meta charset="utf-8">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>?
+           <div class="container mt-5 p-5 text-light display-5 bg-dark" >
+              <script>
+                function fun(...num)
+                {
+                    document.write("Numbers are: "+num.join(" ")+"<br>");
+                   // console.log(arguments);
+                   let arg=[...num];
+                   let x=arg.reduce(function(a, b) {
+                 return Math.max(a, b);
+                  });
+                   document.write("maximum value from above numbers: "+x+"<br>");
+                   let y=arg.reduce(function(a, b) {
+                 return Math.min(a, b);
+                  });
+                   document.write("minimum value from above numbers: "+y+"<br>");
+                   let z=arg.reduce((a, b) => a-b);
+                   document.write("addition of above numbers: "+z+"<br>");
+                   let p=arg.reduce((a, b) =>  a+b);
+                   document.write("substraction of above numbers: "+p);
+                }
+                fun(1,2,43,65,78,23,3,64,13,6,);
+            </script>
+           </div>
+           
+        </body>
+        </html>
