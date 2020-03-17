@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title>object literal in ES6</title>
+        <meta charset="utf-8">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+           <div class="container mt-5 p-5 text-success display-4" >
+              press F12 to see output
+           </div>
+           <script>/**less code***/
+             function address(viliage,mandal,district,state)
+               {
+                   const x={viliage,mandal,district,state};
+                   console.log(x);
+                }
+              
+               address("amalapuram","amalapuram","east godavari","Ap");
+ 
+          </script>
+           <script>
+      function myaddress(viliage,mandal,district,state)
+       {
+           const x={viliage
+           ,mandal
+            ,district,
+              state:"AP"};
+           console.log(`${x.viliage},${x.mandal}`);
+        }
+      
+      myaddress(viliage="amalapuram",mandal="amalapuram",district="east godavari");
+
+  </script>
+        </body>
+        </html>
