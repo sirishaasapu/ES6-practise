@@ -7,7 +7,7 @@
         <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
-        <script type="module" src="C:\sirisha\git hub\ES6-practise\class.js"></script>   
+        
     </head>
         <body>
            <div class="container mt-5 p-5 text-light display-5 bg-dark" >
@@ -18,18 +18,40 @@
                     this.type = type;
                     this.legs = legs;
                 }
+                makenoise(sound="sound")
+                {
+                    console.log(sound);
+                }
+                
+              get metaData() {
+               return `Type: ${this.type} Legs: ${this.legs}`;
+    }
+    
             }
+         
             let cat = new Animal('Cat', 4);
             let dog = new Animal('dog', 4);
             let cow = new Animal('cow', 4);
             let monkey = new Animal('monkey', 4);
             let donkey = new Animal('donkey', 4);
 
-           document.write("A cat has" +cat.legs+" legs"+"<br>"
-           +"A dog has  " +dog.legs+" legs"+"<br>"
-           +"A cow has  " +cow.legs+" legs"+"<br>"
-           +"A monkey has " +monkey.legs+" legs"+"<br>"
-           +"A donkey has  " +donkey.legs+" legs"+"<br>");
+           document.write(cat.metaData+"<br>"+dog.metaData+"<br>"+
+           cow.metaData+"<br>"+
+         monkey.metaData+"<br>"+
+           donkey.metaData+"<br>");
+           //extended class 
+           //extended super class properties
+           class sound extends Animal{
+               constructor(type, legs, tail) {
+                super(type, legs);
+                 this.tail = tail;
+               }
+        }
+     let tail=new sound("",'',1);
+     document.write("The following animals having number of tails are :"+tail.tail+" tail");
+     let hen=new sound("hen",'2',1);
+     let dock=new sound("dock",'2',1);
+     document.write("<br>"+hen.metaData + " tails : "+hen.tail+"<br>"+dock.metaData +" tails :"+dock.tail)
         </script>
             </div>
            </div>
