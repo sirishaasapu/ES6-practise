@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <title>ES6 class</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+        <script type="module" src="C:\sirisha\git hub\ES6-practise\class.js"></script>   
+    </head>
+        <body>
+           <div class="container mt-5 p-5 text-light display-5 bg-dark" >
+             <h1 class="text-success">class</h1>  
+           <script> 
+            class Animal {
+                constructor(type, legs) {
+                    this.type = type;
+                    this.legs = legs;
+                }
+            }
+            let cat = new Animal('Cat', 4);
+            let dog = new Animal('dog', 4);
+            let cow = new Animal('cow', 4);
+            let monkey = new Animal('monkey', 4);
+            let donkey = new Animal('donkey', 4);
+
+           document.write("A cat has" +cat.legs+" legs"+"<br>"
+           +"A dog has  " +dog.legs+" legs"+"<br>"
+           +"A cow has  " +cow.legs+" legs"+"<br>"
+           +"A monkey has " +monkey.legs+" legs"+"<br>"
+           +"A donkey has  " +donkey.legs+" legs"+"<br>");
+        </script>
+            </div>
+           </div>
+           
+        </body>
+        </html>
