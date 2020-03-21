@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <title>set in ES6</title>
+        <meta charset="utf-8">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+           <div class="container mt-5 p-5 text-light display-5 bg-dark" >
+             <h1 class="text-success">sets</h1>
+             <script>
+                   const exampleSet = new Set([1,1,1,1,2,2,2,2]);
+
+                           exampleSet.add(5);
+                          exampleSet.add(5).add(17);//adding elements to set
+
+                          document.write(exampleSet.delete(5)+"<br>");//deleting element from set
+                          document.write(exampleSet.size+"<br>");  //size of set
+                          document.write(exampleSet.has(67));//if the set contain the following element  set or not
+                          console.log(exampleSet);
+                          exampleSet.clear();//clear entire elements set
+                        document.write(exampleSet.size); // size of an set
+                        
+                </script>
+              
+           </div>
+           
+        </body>
+        </html>
