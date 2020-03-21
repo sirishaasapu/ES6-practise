@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>ES6 find and findIndex</title>
+        <meta charset="utf-8">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+           <div class="container mt-5 p-5 bg-dark text-light" >
+               <h1 class="display-4">find and findIndex</h1>
+               <p class="mt-5">
+              <script>
+                var numbers = [4, 9, 16, 25, 29];
+           var first = numbers.find(myFunction);
+           var index = numbers.findIndex(myFunction);
+           
+
+                  function myFunction(value, index, array) {
+                    return value > 18;
+                  
+                   }
+                   document.write("The number pass the test:"+first+"<br>");
+                   document.write("passed number with index:"+index);
+
+            </script>
+            </p>
+            <p>
+            <script>
+
+                </script>
+            </p>
+           </div>
+           
+        </body>
+        </html>
