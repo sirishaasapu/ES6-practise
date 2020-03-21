@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function resolveAfter3Seconds() {
+              return new Promise(resolve => {
+               setTimeout(() => {
+                    resolve("Hello it's Asyncronous functiion");
+                    }, 1000);//here we set the time interval after completion of given time intervals the requested data will be displayed
+                     });
+                   }
+                         async function getAsyncData() {//asyncronous function :function followed async keyword
+                  const result = await resolveAfter3Seconds();//display the requested data await 
+                  console.log(result);
+                     }
+
+                  getAsyncData();
+            </script>
+    </body>
+</html>
